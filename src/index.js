@@ -33,7 +33,20 @@ function Intro() {
 }
 
 function SkillList() {
-  return <p>dummy text</p>;
+  return (
+    <div className="skill-list">
+      <Skill skill="HTML" />
+      <Skill skill="CSS" />
+      <Skill skill="React" />
+      <Skill skill="Java" />
+      <Skill skill="C#" />
+      <Skill skill="JavaScript" />
+    </div>
+  );
+}
+
+function Skill(props) {
+  return <div className="skill">{props.skill}</div>;
 }
 
 const rootElement = document.getElementById("root");
